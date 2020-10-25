@@ -12,7 +12,7 @@
 
       <div class="row">
         <div class="col-md-3" v-for="item in list" :key="item">
-          <img src="../assets/protest.png" alt="protest" class="item-image" />
+          <img src="../../assets/protest.png" alt="protest" class="item-image" />
           <p class="title">Lekki Massacre</p>
           <p class="time">October 20, 2020 7:00pm</p>
           <p class="content">
