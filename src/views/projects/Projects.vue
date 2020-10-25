@@ -6,12 +6,12 @@
           <h2>Experiences / Projects</h2>
         </div>
         <div class="col-md-6 add-btn">
-          <button class="btn btn-primary">Share Experience/Project</button>
+          <router-link to="/projects/add"><a class="btn btn-primary">Share Experience/Project</a></router-link>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-3" v-for="item in list" :key="item">
+        <div class="col-md-4" v-for="item in list" :key="item">
           <img src="../../assets/protest.png" alt="protest" class="item-image" />
           <p class="title">Lekki Massacre</p>
           <p class="time">October 20, 2020 7:00pm</p>
@@ -20,7 +20,7 @@
             some form, by injected humour, or randomised words which don't look even slightly believable....
           </p>
 
-          <a class="read-more">Read More</a>
+          <router-link :to="'/projects/' + item"><a class="read-more">Read More</a></router-link>
         </div>
       </div>
     </div>
@@ -67,12 +67,12 @@
     font-size: 0.9rem;
   }
 
-  .col-md-3 {
+  .col-md-4 {
     margin-bottom: 50px;
   }
 
   .projects {
-    padding: 50px 100px;
+    padding: 50px 200px;
   }
 
   .add-btn {
@@ -81,10 +81,10 @@
   }
 
   .experience {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
 
-      h2 {
-          font-weight: bold;
-      }
+    h2 {
+      font-weight: bold;
+    }
   }
 </style>
