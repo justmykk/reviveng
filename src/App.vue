@@ -9,4 +9,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  p, div, body {
+    margin: 0;
+  }
 </style>

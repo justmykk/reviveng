@@ -4,7 +4,7 @@
       <div class="col-md-4"></div>
       <div class="col-md-4">
         <div class="card">
-          <form>
+          <form @submit.prevent="submitForm">
             <h2>Revive NG</h2>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
@@ -33,6 +33,11 @@
 
   export default defineComponent({
     name: 'Login',
+    methods: {
+      submitForm() {
+        this.$router.push('/projects');
+      },
+    },
   });
 </script>
 
@@ -43,6 +48,6 @@
   }
 
   h2 {
-      text-align: center;
+    text-align: center;
   }
 </style>
