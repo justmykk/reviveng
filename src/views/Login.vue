@@ -20,6 +20,8 @@
               >
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+
+            <router-link to="/register"><a>Not Registered? Sign Up</a></router-link>
           </form>
         </div>
       </div>
